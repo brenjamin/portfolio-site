@@ -1,0 +1,51 @@
+
+.intro {
+
+    &__logo-box {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-primary;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+        
+        animation: hop .6s 3, moveToTopLeft ease-out .5s 1.8s backwards;
+        z-index: 2;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            top: 1.5rem;
+            left: 1rem;
+        }
+    }
+
+    &__background {
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform-origin: center center;
+
+        animation: fadeOut .5s 1.8s forwards;
+        z-index: 2;
+        
+        
+    }
+    
+    &__logo {
+        font-family: 'Bitter', serif;
+        font-weight: 700;
+        color: white;
+        font-size: 3.5rem;
+        letter-spacing: -.9rem;
+        margin-left: -.6rem;
+    }
+}

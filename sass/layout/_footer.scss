@@ -1,0 +1,55 @@
+.footer {
+    grid-column: full-start / full-end;
+    background-color: $color-primary-dark;
+    color: $color-gray-light;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    
+
+    &__links {
+        list-style: none;
+        border-bottom: 1px solid $color-gray-light;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        font-size: 3.5rem;
+        
+
+        i {
+            transition: all .2s;
+            
+        }
+        &:hover i {
+            transform: scale(1.1);
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 1rem;
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__icon {
+        fill: $color-gray-light;
+        width: 3rem;
+        height: 3rem;
+        transition: all .2s;
+    }
+
+    &__icon:hover {
+        transform: scale(1.1);
+    }
+
+    &__copyright {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+}

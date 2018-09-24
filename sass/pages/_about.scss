@@ -1,0 +1,125 @@
+.about {
+    background-color: $color-primary;
+    padding: 0 2rem;
+    color: $color-white;
+    overflow: auto;
+    
+
+    @media only screen and (max-width: $bp-xsmall) {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        color: $color-black;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            flex-direction: column;
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        
+    }
+
+    
+
+    
+    &__img {
+        min-width: 25rem;
+        max-width: 25rem;
+        height: auto;
+        margin-right: 5rem;
+        border-radius: 50%;
+        box-shadow: 0 10px 15px rgba($color-black, .2);
+
+
+        
+        @media only screen and (max-width: $bp-xsmall) {
+            margin: 1rem 0;
+        }
+
+    }
+}
+
+.about-2 {
+    background-color: white;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+
+    @media only screen and (max-width: $bp-large) {
+        h2 {
+            font-size: 6.8rem;
+        }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        h2 {
+            font-size: 6rem;
+            margin-bottom: 0;
+        }
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        h2 {
+            font-size: 5rem;
+        }
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        h2 {
+            font-size: 4rem;
+        }
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+        h2 {
+            font-size: 3.75rem;
+            text-align: center;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+    
+    &__paragraphs {
+        flex-basis: 50%;
+        margin-right: 3rem;
+
+        
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+
+    }
+    
+    &__link,
+    &__link:visited {
+        color: $color-primary-dark;
+        position: relative;
+        z-index: 2;
+    }
+}

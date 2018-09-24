@@ -1,0 +1,87 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    background-color: 	#88AB75;
+    padding: 10px 0;
+  }
+  
+  #title {
+    text-align:center;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+  }
+  
+  #timeSelect {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 40px;
+    
+  }
+  
+  #breakSelect {
+    float: left;
+    
+    text-align:center;
+    width: 50%;
+  }
+  
+  #sessionSelect {
+    
+    text-align:center;
+  }
+  
+  #circle {
+    text-align:center;
+    border: solid black 1px;
+    border-radius: 50%;
+    width: 400px;
+    height:400px;
+    margin: 0 auto;
+    background-color: #FF6347;
+    margin-top: 0px;
+    border: black solid 5px;
+    position: relative;
+  }
+  
+  
+  #type-div {
+    margin-top: 75px;
+  }
+  
+  #time-div {
+    margin-top:40px;
+    font-size: 110px;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  
+  #resetButton {
+    width: 75px;
+    border-radius: 10%;
+    background-color: #FF6347;
+    border: 1px black solid;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  
+  #resetButton:hover {
+    color: white;
+  }
+  
+  .blinky {
+    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {  
+    50% { opacity: 0; }
+  }
+  
+  img {
+    position: absolute;
+    top: -55px;
+    left: 143px;
+  }

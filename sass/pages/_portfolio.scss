@@ -1,0 +1,20 @@
+.portfolio {
+    
+    h2 {
+        color: $color-white;
+    }
+    
+    &__websites {
+       padding: 0 2rem;;
+       background-color: $color-primary;
+       
+    }
+
+    &__projects {
+        padding: 0 2rem;
+        background-color: $color-gray;
+        
+    }
+
+    
+}

@@ -1,0 +1,38 @@
+// breakpoints
+$bp-largest: 71.88em; //1150px
+$bp-large: 62.5em; //1000px
+$bp-medium: 53.75em; //850px
+$bp-small: 43.75em; //700px
+$bp-smaller: 37.5em; //600px
+$bp-xsmall:  31.25em; //500px
+$bp-xxsmall: 28.13em; //450px
+$bp-smallest: 21.88em; //350px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 10px - 10/16 = 62.5%
+    box-sizing: border-box;
+
+    // @media only screen and (max-width: $bp-smaller) {
+    //     font-size: 50%;
+    // }
+
+    // @media only screen and (max-width: $bp-small) {
+    //     font-size: 56.25%; //9px
+    // }
+}
+
+body {
+    background-color: $color-primary-dark;
+}
+
+
+
+

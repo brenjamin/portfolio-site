@@ -1,0 +1,139 @@
+.header {
+    grid-column: full-start / full-end;
+    min-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    
+
+    display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    @media only screen and (orientation: landscape) {
+        line-height: 1.2;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) and (orientation: portrait) {
+        line-height: 1.1;
+    }
+
+    @media only screen and (max-width: $bp-smaller) and (orientation: landscape) {
+        line-height: 1;
+    }
+    
+    
+    
+
+    
+
+    &__left {
+        background-color: $color-primary;
+        flex: 1;
+        color: $color-white;
+        padding: 1rem;
+        text-align: center;
+        
+        animation: moveUp .5s 3.3s backwards;
+    
+        h1 {
+            font-size: 11rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 10.5rem;
+            }
+    
+            @media only screen and (max-width: $bp-large) {
+                font-size: 9.5rem;
+            }
+    
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 8.5rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) and (orientation: landscape) {
+                font-size: 5rem;
+            }
+
+            @media only screen and (max-width: $bp-xsmall) and (orientation: portrait) {
+                font-size: 8rem;
+            }
+
+            @media only screen and (max-width: $bp-xsmall) and (orientation: portrait) {
+                font-size: 7rem;
+            }
+        }
+
+        &--hello {
+            display: inline-block;
+            animation: shrink .5s 3.3s backwards;
+
+            
+        }
+
+        &--comma {
+            @include invisible;
+            display: inline-block;
+            animation: fadeAndDropIn .5s 2.5s forwards;
+        }
+
+        &--text-2 {
+            @include invisible;
+            animation: fadeAndDropIn .5s 3.5s forwards;
+        }
+    }
+
+    &__right {
+        
+        background-image: linear-gradient(to right, rgba($color-secondary, .8), rgba($color-secondary, .8)),
+                            url(../img/hero.png);
+        background-size: cover;
+        width: 50%;
+        animation-name: divMoveInRight;
+        animation-duration: 1s;
+        animation-delay: 4.3s;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        animation-fill-mode: backwards;
+        
+
+        
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+            height: calc((100vh - 8rem)/2);
+        }
+        
+
+        &--text-1 {
+            @include invisible;
+            animation: fadeAndDropIn .5s 5.5s forwards;
+            padding: 1rem;
+            
+            
+
+        }
+    }
+
+    &__icon-container {
+        display: inline-block;
+        
+        @include invisible;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: .5rem;
+        animation: svgFadeIn .5s 6s forwards, upAndDown 1s 6.1s infinite;
+        cursor: pointer;
+    }
+
+    &__icon {
+        fill: $color-white;
+        height: 3rem;
+        width: 3rem;
+    }
+
+}

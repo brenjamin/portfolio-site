@@ -1,0 +1,292 @@
+/*Page*/
+
+html, body, #rsvp_form {
+	height: 100%;
+}
+
+body {
+	font-family: "HelloDeanna", sans-serif;
+	font-size: 20px;
+}
+
+#main {
+	margin-top: 50px;
+	background-color: white;
+	height: 100%;
+}
+
+@font-face {
+    font-family:"HelloDeanna";
+    src: url("fonts/HelloDeanna.ttf");
+}
+
+@font-face {
+    font-family:"DJB Jacked Up Kinda Luv";
+    src: url("fonts/DJB Jacked Up Kinda Luv.ttf");
+}
+
+@font-face {
+    font-family:"Always Forever";
+    src: url("fonts/Always Forever.ttf");
+}
+
+@font-face {
+    font-family:"Sketch Logs";
+    src: url("fonts/SketchLogs.ttf");
+}
+
+@font-face {
+    font-family: "TheWorldIsYours";
+    src: url("fonts/TheWorldIsYours.ttf");
+}
+
+/* Navbar*/
+
+nav.navbar-default, nav.navbar {
+	background-color: white !important;
+	border-bottom: black 1px solid;
+}
+
+.nav.navbar-nav li {
+	color: black;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: white;
+}
+
+.nav-pills>li+li {
+	margin-left: 0;
+}
+
+#magic-line {
+	position: absolute;
+	bottom: 10px;
+	width: 100px;
+	height: 2px;
+	background: #654321;
+	list-style-type: none;
+}
+
+/*Hide magic line when nav is collapsed */
+@media only screen and (max-width: 768px) {
+    
+    #magic-line {
+        display: none;
+    }
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: white;
+}
+
+.center-pills { 
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+li.active a {
+	color: green !important;
+}
+
+a {
+	transition: color .5s linear !important;
+}
+
+li.inactive a:hover {
+	color: green !important;
+}
+
+#book_link, #directions {
+	color: brown;
+	text-decoration: none;
+	transition: color 0s linear !important;
+}
+
+li.inactive a {
+	color: black !important;
+
+}
+
+li, a {
+	cursor: pointer;
+}
+
+/* Home */
+img#logo, img#accommodations_img {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	min-width: 385px;
+}
+
+#clock, #home_msg {
+	text-align: center;
+	font-size: 23.5px;
+}
+#home_msg {
+	margin-top: 15px;
+}
+
+#clock {
+	transition: opacity .5s linear;
+}
+
+/*Bridal Party */
+
+.bridesmaid, .groomsman {
+	clear: both;
+	padding: 10px;
+}
+
+
+#bridesmaids, #groomsmen {
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: auto;
+}
+
+#groomsmen {
+	margin-top: 40px;
+}
+
+#bridesmaids .info {
+	font-family: "Always Forever", cursive;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+#groomsmen .info {
+	font-family: "TheWorldIsYours", sans-serif;
+	position: relative;
+	top: -15px;
+	font-size: 30px;
+}
+
+.bridesmaid .name {
+	font-family: "DJB Jacked Up Kinda Luv", cursive;
+	float: left;
+	position: relative;
+	left: -30px;
+	top: -5px;
+}
+
+.flower, .animal {
+	width: 100px;
+	height: auto;
+	float: left;
+	min-width: 0px;
+}
+
+#groomsmen #groomsmen_logo h1 {
+	font-family: "Sketch Logs", sans-serif;
+	font-size: 50px;
+}
+
+#bridesmaids #bridesmaids_logo h1 {
+	font-family: "DJB Jacked Up Kinda Luv", cursive;
+	font-size: 50px;
+}
+
+#groomsmen_logo {
+	position: relative;
+	top: 30px;
+}
+
+.bridesmaid .info {
+	position: relative;
+	white-space: pre-line;
+	float: right;
+	width: 88%;
+	top: -5px;
+	left: -10px;
+}
+
+.groomsmen img {
+	vertical-align: middle;
+}
+
+.groomsman .info {
+	white-space: pre-line;
+	clear: both;
+	margin-left: 5%;
+}
+.groomsman .name {
+	font-family: "Sketch Logs", sans-serif;
+	float: left;
+	vertical-align: middle;
+}
+
+#eric .name {
+	line-height: 64px;
+}
+
+#bryan .name {
+	line-height: 126px; ;
+}
+
+#kyle .name {
+	line-height: 51px;
+}
+
+/*Lodging*/
+#lodging_pic {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	min-width: 380px;
+	padding-top: 0;
+}
+
+
+
+/*RSVP*/
+iframe {
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+}
+
+
+.soon {
+	margin-top: 10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#instagram_page p {
+	font-size: 30px;
+	text-align: center;
+}
+
+/*Fix navbar issue on phone*/
+.dropdown-backdrop {
+    position: static;
+}
+
+#instafeed {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#instagram_page p {
+	margin-top: 10px;
+}
+
+#instafeed img {
+	width: 291px;
+	height: 291px;
+}
+
+.instapic {
+	margin: 5px;
+
+}
+

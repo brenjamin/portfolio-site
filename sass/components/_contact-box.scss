@@ -1,0 +1,45 @@
+.contact {
+    &__container {
+        display: flex;
+        
+        border-radius: 2px;
+        background-size: cover;
+        box-shadow: 0 0 6rem rgba($color-black, .2);
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
+    }
+
+    &__description {
+        flex-basis: 50%;
+        padding: 4rem;
+        font-size: 3rem;
+        background-color: $color-gray;
+        
+        p a {
+            color: $color-primary-dark;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            font-size: 2rem;
+            padding: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-xxsmall) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__form-container {
+        flex: 1;
+        padding: 4rem;
+        background-image: linear-gradient(rgba($color-secondary, .9), rgba($color-secondary, .9)), url(../img/form-bg.png);
+        @media only screen and (max-width: $bp-smaller) {
+            font-size: 2rem;
+            padding: 3rem;
+        }
+
+
+    }
+}

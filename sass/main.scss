@@ -1,0 +1,27 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/nav-btn";
+@import "components/card";
+@import "components/button";
+@import  "components/form";
+@import "components/skills-box";
+@import "components/bg-video";
+@import "components/contact-box";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/intro";
+@import "layout/nav-bar";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/portfolio";
+@import "pages/contact";
+

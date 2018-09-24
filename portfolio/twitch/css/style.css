@@ -1,0 +1,138 @@
+body {
+    background: #6441A5;
+    padding: 15px;
+}
+  
+.streamerBlock {
+max-width: 700px;
+margin: 0 auto;
+background: #F2DE50;
+padding: 20px;
+margin-top: 0;
+border-top: 1px solid #6441A5;
+height: auto;
+
+}
+
+.streamerBlock:last-child {
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+#buttons {
+/* display: inline; */
+float: right;
+position: relative;
+top: 15px;
+}
+
+img {
+width: 50px;
+height: auto;
+}
+
+#twitchImg {
+width: 100px;
+height: auto;
+border-radius: 25%;
+}
+
+.btn-primary {
+background: #6441A5 !important;
+}
+
+#header {
+
+
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+border-top: none;
+}
+h1 {
+display: inline;
+font-size: 20px;
+}
+
+h2 {
+font-size: 16px;
+}
+
+a {
+color: black;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: none;
+color: black;
+}
+
+p {
+margin-top: 20px;
+}
+
+.hidden {
+display: none;
+}
+
+button.active {
+border: black 1px solid !important;
+}
+
+button:focus {
+outline: none !important;
+}
+
+#all {
+background: #5971AD;
+}
+
+.offline h2 {
+font-style: italic;
+}
+
+#searchBar {
+margin: 0 auto;
+max-width: 700px;
+padding: 5px;
+border-top: 1px solid #6441A5;
+background: #F2DE50;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.search {
+flex-basis: 90%;
+display: block;
+padding: 5px;
+padding-left: 35px;
+border-radius: 20px;
+border: 1px solid gray;
+
+font-size: 18px;
+}
+
+.search-icon {
+    fill: darkslategray;
+    
+    
+    width: 15px;
+    height: 15px;
+    margin-left: -30px;
+}
+
+
+
+input:focus {
+outline: none !important;
+
+}
+
+#searchResults p {
+font-style: italic;
+}

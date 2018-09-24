@@ -1,0 +1,178 @@
+.skills-box {
+    display: grid;
+    grid-template-columns: [skills-start] repeat(5, 8rem) [skills-end];
+    grid-template-rows: repeat(8, min-content);
+    grid-gap: 10px;
+    justify-items: center;
+    font-size: 2rem;
+    background-color: $color-secondary;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 2px 4px rgba($color-black, .2);
+    position: relative;
+    z-index: 2;
+
+    @media only screen and (max-width: $bp-xsmall) {
+       
+       grid-template-columns: [skills-start] min-content repeat(4, 7rem) [skills-end];
+       grid-column-gap: 3px;
+       grid-row-gap: 10px;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+       
+        grid-template-columns: [skills-start] min-content repeat(4, 5.5rem) [skills-end];
+     }
+    
+    
+    &__rank {
+        font-size: 1.2rem;
+        font-weight: 700;
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            font-size: .75rem;
+         }
+
+        
+
+        &--big {
+            font-size: 2rem;
+
+            @media only screen and (max-width: $bp-xsmall) {
+                font-size: 1.5rem;
+             }
+        }
+    }
+
+    &__item {
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 0 0 2px $color-gray-light;
+        font-weight: 700;
+        font-size: 2rem;
+
+        // @media only screen and (max-width: $bp-xsmall) {
+        //     font-size: 1.5rem;
+        // }
+
+        &--html {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+
+        &--css {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+
+        }
+
+        &--js {
+            grid-row: 4 / 5;
+            grid-column: 1 / 2;
+
+        }
+
+        &--jq {
+            grid-row: 5 / 6;
+            grid-column: 1 / 2;
+        }
+
+        &--jq-1 {
+            grid-row: 5 / 6;
+            grid-column: 2 / 3;
+        }
+
+        &--jq-2 {
+            grid-row: 5 / 6;
+            grid-column: 3 / 4;   
+        }
+
+        &--jq-3 {
+            grid-row: 5 / 6;
+            grid-column: 4 / 5;
+        }
+
+        &--wp {
+            grid-row: 6 / 7;
+            grid-column: 1 / 2;
+        }
+
+        &--wp-1 {
+            grid-row: 6 / 7;
+            grid-column: 2 / 3;
+        }
+
+        &--wp-2 {
+            grid-row: 6 / 7;
+            grid-column: 3 / 4;
+        }
+
+        &--wp-3 {
+            grid-row: 6 / 7;
+            grid-column: 4 / 5;
+        }
+
+        &--ps {
+            grid-row: 7 / 8;
+            grid-column: 1 / 2;
+        }
+
+        &--ps-1 {
+            grid-row: 7 / 8;
+            grid-column: 2 / 3;
+        }
+
+        &--ps-2 {
+            grid-row: 7 / 8;
+            grid-column: 3 / 4;
+        }
+
+        &--php {
+            grid-row: 8 / 9;
+            grid-column: 1 / 2;
+        }
+
+        &--php-1 {
+            grid-row: 8 / 9;
+            grid-column: 2 / 3;
+        }
+
+        &--dot-blue {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: $color-primary;
+            box-shadow: 0 3px 5px rgba($color-black, .2);
+
+            @media only screen and (max-width: $bp-xsmall) {
+                width: 3.5rem;
+                height: 3.5rem;
+             }
+        }
+    }
+
+    &__img {
+        display: block;
+        height: 4rem;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            height: 3.5rem;
+         }
+
+        &--sm {
+            height: 3.25rem;
+
+            @media only screen and (max-width: $bp-xsmall) {
+                height: 2.75rem;
+            }
+        }
+        
+    }
+
+}
